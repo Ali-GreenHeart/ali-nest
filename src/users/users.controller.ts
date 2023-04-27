@@ -1,6 +1,6 @@
 import { Body, Controller, Get, Post, Res, Param, Query, UsePipes, ValidationPipe, ParseIntPipe } from '@nestjs/common';
 import { Response } from 'express'
-import { CreateUserDto } from 'src/users/dtos/CreateUser.dto';
+import { CreateUserDto } from 'src/users/dto/CreateUser.dto';
 
 
 @Controller('users')

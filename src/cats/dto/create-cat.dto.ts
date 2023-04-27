@@ -1,5 +1,4 @@
-import { Type } from 'class-transformer';
-import { IsAlpha, IsNotEmpty, Max, Min } from 'class-validator'
+import { IsAlpha, IsNotEmpty, Max, Min } from 'class-validator';
 
 
 type CatBreed = 'A' | 'B'

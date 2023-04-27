@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { CatsController } from './cat.controller';
 import { CatsService } from './cat.service';
-import { Cat, CatSchema } from './schema/cat.schema';
+import { CatSchema } from './schema/cat.schema';
 
 @Module({
     imports: [MongooseModule.forFeature([
