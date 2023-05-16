@@ -1,7 +1,9 @@
-import { IsAlpha, IsNotEmpty, Max, Min } from 'class-validator';
+import { IsAlpha, IsEnum, IsNotEmpty, Max, Min } from 'class-validator';
 
-
-type CatBreed = 'A' | 'B'
+enum CatBreed {
+    Garfield = "Garfield",
+    B = "B"
+}
 
 
 export class CreateCatDto {
@@ -15,6 +17,6 @@ export class CreateCatDto {
     age: number;
 
     @IsNotEmpty()
-    // @Type(() => CatBreed)
+    @IsEnum(CatBreed)
     breed: CatBreed;
 }
